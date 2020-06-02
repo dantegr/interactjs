@@ -62,7 +62,7 @@ function onClickArea(show, hide, openurl, playerCmd, svgId, position, setdata, r
     console.log(show, hide, openurl, playerCmd, svgId, position, setdata, replaceCurrentMedia, customData, opentarget, tries,fadeOut);
 
     var svg = svgId ? document.querySelector('#' + svgId) : document;
-	console.log(svg)
+	console.log(document.querySelector('#' + svgId))
 
     if(!svg || !svg.getAttribute('data-gobrain-widgetId')){
         if(tries>0){
